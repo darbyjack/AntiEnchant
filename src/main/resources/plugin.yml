@@ -1,0 +1,5 @@
+name: AntiEnchant
+version: ${project.version}
+main: me.glaremasters.antienchant.AntiEnchant
+authors: [blockslayer22]
+description: AntiEnchant
