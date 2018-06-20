@@ -1,2 +1,5 @@
 blocked-items:
 - "DIAMOND_SWORD"
+
+blocked-items-anvil:
+- "DIAMOND_SWORD"

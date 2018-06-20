@@ -24,6 +24,7 @@ public class CMDReload implements CommandExecutor {
             if (!player.hasPermission("ae.reload")) return true;
         }
         antiEnchant.reloadConfig();
+        sender.sendMessage("I reloaded ya damn config");
         return true;
     }
 
