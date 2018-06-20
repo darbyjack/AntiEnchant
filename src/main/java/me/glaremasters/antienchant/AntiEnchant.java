@@ -1,13 +1,15 @@
 package me.glaremasters.antienchant;
 
+import me.glaremasters.antienchant.commands.CMDReload;
+import me.glaremasters.antienchant.events.EnchantEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AntiEnchant extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        getServer().getPluginManager().registerEvents(new EnchantEvent(this), this);
+        getCommand("aereload").setExecutor(new CMDReload(this));
     }
 
     @Override
