@@ -8,6 +8,7 @@ public final class AntiEnchant extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new EnchantEvent(this), this);
         getCommand("aereload").setExecutor(new CMDReload(this));
     }
